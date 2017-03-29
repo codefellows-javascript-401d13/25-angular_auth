@@ -49,4 +49,31 @@ function gallerySerivce($q, $log, $http, authService){
     });
     //TODO finish this route;
   };
+
+  service.fetchGalleries = function(){
+    $log.debug('gallerySerivce.fetchGalleries');
+
+    return authService.getToken()
+    .then(token => {
+      let url = `${__API_URL__}/api/gallery`;
+      let config = {
+        headers: {
+          Accept: 'application/json',
+          Authorization: `Bearer ${token}`
+        }
+      };
+
+      return $http.get(url, config);
+    })
+    .then(res => {
+      $log.log('galleries retrieved');
+      service.galleries = res.data;
+      return service.galleries;
+    })
+    .catch(err => {
+      $log.error(err.message);
+      return $q.reject(err);
+    });
+  };
+  return service;
 }
