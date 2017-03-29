@@ -1,11 +1,14 @@
 //all imports go in here//
 
+@import 'lib/base/reset';
+@import 'lib/theme/vars';
+@import 'lib/base/base';
 
 //::::BASE Styles:::://
-body {
-  background-color: pink;
-}
-// 
+// body {
+//   background-color: pink;
+// }
+//
 // @import "lib/base/reset";
 // @import "lib/base/base";
 // //::::LAYOUT Styles:::://
