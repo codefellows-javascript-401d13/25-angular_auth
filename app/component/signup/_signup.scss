@@ -1,0 +1,23 @@
+h2 {
+  padding: $gutter 0 $gutter-sm 0;
+  margin-left: $gutter;
+  font-size: 1.3vw;
+}
+
+.input-std {
+  width: 90%;
+  margin: 0 $gutter $gutter;
+  height: 3vw;
+
+
+}
+
+::-webkit-input-placeholder {
+  text-indent: $gutter-sm;
+  font-size: 1.1vw;
+}
+
+.btn-std {
+  float: right;
+  margin-right: $gutter;
+}

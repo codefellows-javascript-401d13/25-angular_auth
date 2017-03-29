@@ -6,6 +6,9 @@
 @import "./layout/header";
 @import "./layout/content";
 @import "./layout/footer";
+// ::::: Views  ::::: //
+@import "../view/landing/landing";
+@import "../view/home/home";
 // ::::: Components ::::: //
 @import "../component/login/login";
 @import "../component/signup/signup";

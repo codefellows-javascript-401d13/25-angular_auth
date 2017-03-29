@@ -3,9 +3,21 @@ header {
   color: $white;
   padding-top: 10px;
   width: 100%;
-  height: 20px;
+  height: 5vw;
+  font-size: 2.7vw;
+}
+.logo {
+  float: left;
+  margin: 0 $gutter-sm;
+  height: 3vw;
+  width: 3vw;
+  background: $white;
+}
+h1 {
+  margin-left: $gutter;
 }
 
-div {
-  background-image: url('../../assets/img/cf-logo.png');
-}
+// .logo {
+//   background-image: url('./img/cf-logo.png');
+//   background-size: cover;
+// }
