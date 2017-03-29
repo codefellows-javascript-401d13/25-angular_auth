@@ -1,5 +1,5 @@
 {
-  "name": "angular-routing-demo",
+  "name": "gl gram frontend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -37,6 +37,12 @@
     "webpack": "^2.3.2"
   },
   "devDependencies": {
+    "angular-mocks": "^1.6.3",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.5.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-webpack": "^2.0.3",
     "webpack-dev-server": "^2.4.2"
   }
 }
