@@ -1,10 +1,13 @@
 'use strict';
 
-require('dotenv').load();
-
+const dotenv = require('dotenv');
 const webpack = require('webpack');
 const HTMLPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
+const production = process.env.NODE_ENV === 'production';
+
+dotenv.load(); //loading in any enviorment variables we need in our app//
 
 module.exports = {
   devtool: 'eval',
@@ -20,6 +23,7 @@ module.exports = {
     new ExtractTextPlugin('bundle.css'),
     new webpack.DefinePlugin({
       __API_URL__: JSON.stringify(process.env.API_URL) //webpack constant//
+      __DEBUG__: JSON.stringify(!production) //webpack constant//
     })
   ],
   module: {
