@@ -1,19 +1,19 @@
 'use strict';
 
-module.exports = ['$q', '$log', '$http', 'authService', gallerySerivce];
+module.exports = ['$q', '$log', '$http', 'authService', galleryService];
 
-function gallerySerivce($q, $log, $http, authService){
-  $log.debug('gallerySerivce');
+function galleryService($q, $log, $http, authService){
+  $log.debug('galleryService');
 
   let service = {};
   service.galleries = [];
 
   service.createGallery = function(gallery){
-    $log.debug('gallerySerivce.createGallery');
+    $log.debug('galleryService.createGallery');
 
     return authService.getToken()
     .then(token => {
-      let url = `${__API_URL__}/api/gallery`;
+      let url = `https://slugram-backend.herokuapp.com/api/gallery`;
       let config = {
         headers: {
           Accept: 'application/json',
@@ -35,27 +35,27 @@ function gallerySerivce($q, $log, $http, authService){
     });
   };
 
-  service.deleteGallery = function(galleryId, galleryData) {
-    $log.debug('service.deleteGallery');
-    return authService.getToken()
-    .then(token => {
-      let url = `${__API_URL__}/api/gallery/${galleryId}`;
-      let config = {
-        headers: {
-          Accept: 'application/json',
-          Authorization: `Bearer ${token}`
-        }
-      };
-    });
-    //TODO finish this route;
-  };
+  // service.deleteGallery = function(galleryId, galleryData) {
+  //   $log.debug('service.deleteGallery');
+  //   return authService.getToken()
+  //   .then(token => {
+  //     let url = `${__API_URL__}/api/gallery/${galleryId}`;
+  //     let config = {
+  //       headers: {
+  //         Accept: 'application/json',
+  //         Authorization: `Bearer ${token}`
+  //       }
+  //     };
+  //   });
+  //   //TODO finish this route;
+  // };
 
   service.fetchGalleries = function(){
-    $log.debug('gallerySerivce.fetchGalleries');
+    $log.debug('galleryService.fetchGalleries');
 
     return authService.getToken()
     .then(token => {
-      let url = `${__API_URL__}/api/gallery`;
+      let url = `https://slugram-backend.herokuapp.com/api/gallery`;
       let config = {
         headers: {
           Accept: 'application/json',

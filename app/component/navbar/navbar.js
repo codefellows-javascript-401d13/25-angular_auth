@@ -8,16 +8,19 @@ module.exports = {
   controllerAs: 'navbarCtrl'
 };
 
-function NavbarController($log, $location, $rootScope, authService){
+function NavbarController($log, $location, $rootScope, authService) {
   $log.debug('NavbarController');
 
-  this.checkPath = function(){
+  this.checkPath = function() {
     let path = $location.path();
-    if(path === '/join') this.hideButtons = true;
-    if(path !== '/join') {
+    if (path === '/join') {
+      this.hideButtons = true;
+    }
+
+    if (path !== '/join') {
       this.hideButtons = false;
       authService.getToken()
-      .catch(() => {
+      .catch( () => {
         $location.url('/join#login');
       });
     }
@@ -29,11 +32,11 @@ function NavbarController($log, $location, $rootScope, authService){
     this.checkPath();
   });
 
-  this.logout = function(){
-    $log.log('NavbarController.logout');
+  this.logout = function() {
+    $log.log('navbarCtrl.logout');
     this.hideButtons = true;
     authService.logout()
-    .then(() => {
+    .then( () => {
       $location.url('/');
     });
   };

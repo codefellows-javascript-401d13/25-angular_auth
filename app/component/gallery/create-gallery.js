@@ -4,17 +4,17 @@ require('./_create-gallery.scss');
 
 module.exports = {
   template: require('./create-gallery.html'),
-  controller: ['$log', 'gallerySerivce', CreateGalleryController],
+  controller: ['$log', 'galleryService', CreateGalleryController],
   controllerAs: 'createGalleryCtrl'
 };
 
-function CreateGalleryController($log, gallerySerivce){
+function CreateGalleryController($log, galleryService){
   $log.debug('CreateGalleryController');
 
   this.gallery ={};
 
   this.createGallery=function(){
-    gallerySerivce.createGallery(this.gallery)
+    galleryService.createGallery(this.gallery)
     .then(() => {
       this.gallery.name = null;
       this.gallery.desc = null;

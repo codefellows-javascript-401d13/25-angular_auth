@@ -50,7 +50,7 @@ function authService($q, $log, $http, $window){
     $log.debug('authService.logout');
     $window.localStorage.removeItem('token');
     token = null;
-    return $q.resolve;
+    return $q.resolve();
   };
 
   service.login = function(user){
