@@ -61,7 +61,7 @@ function authService($q, $log, $http, $window){
     return $q.resolve();
   };
 
-  service.login = function(user){
+  service.login = function(user) {
     $log.debug('authService.login');
 
     let url = `${__API_URL__}/api/login`;
@@ -73,7 +73,7 @@ function authService($q, $log, $http, $window){
       }
     };
     return $http.get(url, config)
-    .then( res = {
+    .then( res => {
       $log.log('success', res.data);
       return setToken(res.data);
     })
@@ -82,5 +82,5 @@ function authService($q, $log, $http, $window){
       return $q.reject(err);
     });
   };
-  returnn service;
+  return service;
 }
