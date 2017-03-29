@@ -34,7 +34,7 @@ function authService($q, $log, $http, $window) {
   service.signup = function(user) {
     $log.debug('authService.signup');
 
-    let url = 'mongodb://localhost/cfgram/api/signup';
+    let url = 'http://localhost:8080/api/signup';
     let config = {
       headers: {
         'Content-Type': 'application/json',
@@ -64,7 +64,7 @@ function authService($q, $log, $http, $window) {
   service.login = function(user) {
     $log.debug('authService.login');
 
-    let url = 'mongodb://localhost/cfgram/api/login';
+    let url = 'http://localhost:8080/api/signup';
     let base64 = $window.btoa(`${user.username}:${user.password}`);
     let config = {
       headers: {
