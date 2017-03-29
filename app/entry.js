@@ -32,5 +32,5 @@ context.keys().forEach(key => {
 context = require.context('./component/', true, /\.js$/);
 context.keys().forEach(key => {
   let name = camelcase(path.basename(key, '.js'));
-  brianGram.service(name, context(key));
+  brianGram.component(name, context(key));
 });
