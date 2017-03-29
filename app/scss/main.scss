@@ -1,3 +1,11 @@
-body {
-  background: blue;
-}
+//  ::::: Base ::::::::://
+@import "./base/reset";
+@import "./theme/vars";
+@import "./base/base";
+// ::::: Layout :::::: //
+@import "./layout/header";
+@import "./layout/content";
+@import "./layout/footer";
+// ::::: Components ::::: //
+@import "../component/login/login";
+@import "../component/signup/signup";
