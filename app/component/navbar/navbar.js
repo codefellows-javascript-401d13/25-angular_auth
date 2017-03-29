@@ -37,7 +37,7 @@ function NavbarController($log, $location, $rootScope, authService) {
     this.hideButtons = true;
     authService.logout()
     .then( () => {
-      $location.url // TODO FINISH LINE
+      $location.url('.');
     })
   }
 }

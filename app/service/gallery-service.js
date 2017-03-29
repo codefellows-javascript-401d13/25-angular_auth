@@ -73,9 +73,9 @@ function galleryService($q, $log, $http, authService) {
     })
     .catch( err => {
       $log.error(err.mesage);
-      return $q.reject; // TODO: check the end of this file
-    })
-  }
+      return $q.reject(err);
+    });
+  };
 
   return service;
-}
+};
