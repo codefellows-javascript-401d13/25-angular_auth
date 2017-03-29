@@ -1,37 +1,26 @@
+@import "../theme/vars";
+
 body{
     background-color: $brand-primary;
     font-family: $font-std;
     display: relative;
 
-    a{
-      text-decoration: none;
-      font-weight: bold;
-      color: $brand-secondary;
-    }
     .clearfix{
       clear: both;
     }
-    nav {
-      background-color: $brand-secondary;
-      color: $white;
-      height:90px;
 
-      h1{
-        display: inline-block;
-        font-size: 30px;
-        vertical-align: middle;
-      }
-    }
+
     main {
       margin:$gutter-std;
     }
+
     input{
       width: 100%;
       box-sizing:border-box;
       border: 1px solid $brand-primary *2;
-      margin: $gutter-std 0;
+      margin: 3% 0;
       font-size: 16px;
-      height: 40px;
+      height: 56px;
       padding:5px;
     }
     form{
@@ -40,10 +29,30 @@ body{
 
     .btn-std{
       @extend input;
+      width: 150px;
       padding: $gutter-std / 2;
       background-color: $brand-secondary;
       color: $white;
       font-weight: 300;
       float:right;
+    }
+
+    h3{
+      text-align: left;
+      margin-left: 1px;
+      font-size: 20px;
+    }
+
+    .join-container{
+
+    p {
+      display: inline-block;
+      margin-top: 108px;
+      }
+      a{
+        text-decoration: none;
+        font-weight: bold;
+        color: $brand-secondary;
+      }
     }
 }

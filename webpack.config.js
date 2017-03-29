@@ -22,7 +22,7 @@ module.exports = {
     }),
     new ExtractTextPlugin('bundle.css'),
     new webpack.DefinePlugin({
-      __API_URL__: JSON.stringify(process.env.API_URL) //webpack constant//
+      __API_URL__: JSON.stringify(process.env.API_URL), //webpack constant//
       __DEBUG__: JSON.stringify(!production) //webpack constant//
     })
   ],

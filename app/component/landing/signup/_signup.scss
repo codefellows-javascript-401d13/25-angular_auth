@@ -1,6 +1,6 @@
-.signup-form {
-  background-color: #444;
-  button {
-    float:right;
-  }
+@import "../../../scss/lib/theme/vars";
+.signup {
+  background-color: $brand-primary;
+  font-size: 2vw;
+  color: black;
 }
