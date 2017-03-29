@@ -1,0 +1,49 @@
+body{
+    background-color: $brand-primary;
+    font-family: $font-std;
+    display: relative;
+
+    a{
+      text-decoration: none;
+      font-weight: bold;
+      color: $brand-secondary;
+    }
+    .clearfix{
+      clear: both;
+    }
+    nav {
+      background-color: $brand-secondary;
+      color: $white;
+      height:90px;
+
+      h1{
+        display: inline-block;
+        font-size: 30px;
+        vertical-align: middle;
+      }
+    }
+    main {
+      margin:$gutter-std;
+    }
+    input{
+      width: 100%;
+      box-sizing:border-box;
+      border: 1px solid $brand-primary *2;
+      margin: $gutter-std 0;
+      font-size: 16px;
+      height: 40px;
+      padding:5px;
+    }
+    form{
+      width:100%;
+    }
+
+    .btn-std{
+      @extend input;
+      padding: $gutter-std / 2;
+      background-color: $brand-secondary;
+      color: $white;
+      font-weight: 300;
+      float:right;
+    }
+}
