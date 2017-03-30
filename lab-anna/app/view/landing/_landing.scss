@@ -23,7 +23,11 @@ h2 {
   margin: $gutter-std 0;
 }
 
-input[type=submit] {
+.clearfix {
+  clear: both;
+}
+
+.btn-std {
   background: $btn-primary;
   height: 10vh;
   width: 33%;
@@ -33,4 +37,19 @@ input[type=submit] {
   border: none;
   color: $white;
   font-size: 2.5vw;
+}
+
+.no-btn {
+  display: block;
+  float: right;
+  margin: $gutter-std;
+  margin-right: $gutter-std * 3;
+  font-size: 2vw;
+
+  a {
+    text-decoration: none;
+    color: $black;
+    font-weight: bold;
+
+  }
 }
