@@ -1,0 +1,13 @@
+@import "../../scss/lib/theme/vars";
+
+img {
+  height: 5vw;
+  width: 5vw;
+  margin: 2vw;
+}
+
+h2 {
+  font: $font-std;
+  font-size: 4vw;
+  display: inline-block;
+}
