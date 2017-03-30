@@ -1,0 +1,41 @@
+@import "../theme/vars";
+
+body{
+    background-color: $brand-primary;
+    font-family: $font-std;
+    display: relative;
+
+    .clearfix{
+      clear: both;
+    }
+
+
+    main {
+      margin:$gutter-std;
+    }
+
+    input{
+      width: 100%;
+      box-sizing:border-box;
+      border: 1px solid $brand-primary *2;
+      margin: 3% 0;
+      font-size: 16px;
+      height: 56px;
+      padding:5px;
+    }
+    form{
+      width:100%;
+    }
+
+    .btn-std{
+      @extend input;
+      width: 150px;
+      padding: $gutter-std / 2;
+      background-color: $brand-secondary;
+      color: $white;
+      font-weight: 300;
+      float:right;
+    }
+
+  
+}

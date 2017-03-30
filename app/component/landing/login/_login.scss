@@ -1,0 +1,6 @@
+@import "../../../scss/lib/theme/vars";
+@import "../signup/signup";
+
+.loginForm {
+    @extend .signup-form;
+  }
