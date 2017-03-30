@@ -22,8 +22,8 @@ module.exports = {
     }),
     new ExtractTextPlugin('bundle.css'),
     new webpack.DefinePlugin({
-      __API_URL__: JSON.stringify(process.env.API_URL,
-      __DEBUG__: JSON.stringigy(!production)
+      __API_URL__: JSON.stringify(process.env.API_URL),
+      __DEBUG__: JSON.stringify(!production)
     })
   ],
   module: {

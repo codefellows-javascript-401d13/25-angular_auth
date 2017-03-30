@@ -1,16 +1,4 @@
-h2 {
-  padding: $gutter 0 $gutter-sm 0;
-  margin-left: $gutter;
-  font-size: 1.3vw;
-}
-
-.input-std {
-  width: 90%;
-  margin: 0 $gutter $gutter;
-  height: 3vw;
-
-
-}
+@import "../../../scss/theme/vars";
 
 ::-webkit-input-placeholder {
   text-indent: $gutter-sm;

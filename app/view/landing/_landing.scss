@@ -4,7 +4,8 @@
   color: $darkgrey;
   p {
     padding-top: $gutter-sm / 2;
-    margin-left: $gutter * 15;
+    margin-left: 71%;
+    margin-right: $gutter-sm;
     clear: both;
     display: inline;
     float: left;
@@ -12,7 +13,7 @@
 
   a {
     display: inline;
-    float: right;
+    float: left;
     padding-top: $gutter-sm / 2;
     margin-right: $gutter;
     text-decoration: none;

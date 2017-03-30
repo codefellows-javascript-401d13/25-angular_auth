@@ -19,7 +19,7 @@ function NavbarController($log, $location, $rootScope, authService) {
 
     if (path !== '/join') {
       this.hideButtons = false;
-      authService.getToken();
+      authService.getToken()
       .catch( () => {
         $location.url('/join#login');
       });
