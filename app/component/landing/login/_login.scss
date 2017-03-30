@@ -1,6 +1,6 @@
 @import "../../../scss/lib/theme/vars";
+@import "../signup/signup";
 
-.login {
-    background-color: $brand-primary;
-    color: black;
+.loginForm {
+    @extend .signup-form;
   }
