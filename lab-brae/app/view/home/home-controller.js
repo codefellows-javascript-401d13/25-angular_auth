@@ -9,7 +9,7 @@ function HomeController($log, $rootScope, galleryService) {
 
   this.galleries = [];
 
-  tihs.fetchGalleries = function() {
+  this.fetchGalleries = function() {
     galleryService.fetchGalleries()
     .then( galleries => {
       this.galleries = galleries;
