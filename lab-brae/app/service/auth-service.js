@@ -31,7 +31,7 @@ function authService($q, $log, $http, $window) {
     return $q.reject(new Error('token not found'));
   };
 
-  service.sign = function(user) {
+  service.signup = function(user) {
     $log.debug('authService.signup');
 
     let url = `${__API_URL__}/api/signup`;
@@ -44,7 +44,7 @@ function authService($q, $log, $http, $window) {
 
     return $http.post(url, user, config)
     .then( res => {
-      $log.log('success:' res.data);
+      $log.log('success:', res.data);
       return setToken(res.data);
     })
     .catch( err => {
@@ -65,7 +65,7 @@ function authService($q, $log, $http, $window) {
     $log.debug('authService.login');
 
     let url = `${__API_URL__}/api/login`;
-    let base64 = $window.btao(`${user.username}:${user.password}`);
+    let base64 = $window.btoa(`${user.username}:${user.password}`);
     let config = {
       headers: {
         Accept: 'application/json',

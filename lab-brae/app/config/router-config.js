@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = ['$stateprovider', '$urlRouterProvider', routerConfig];
+module.exports = ['$stateProvider', '$urlRouterProvider', routerConfig];
 
 function routerConfig($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.when('', '/join#signup');
