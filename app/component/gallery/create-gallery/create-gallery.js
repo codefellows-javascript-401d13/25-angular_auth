@@ -20,7 +20,4 @@ function CreateGalleryController($log, galleryService) {
       this.gallery.desc = null;
     });
   };
-};
-
-
-//TODO   WRITE WHOLE PAGE
+}
