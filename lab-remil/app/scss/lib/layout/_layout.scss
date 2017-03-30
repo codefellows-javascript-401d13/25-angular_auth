@@ -1,0 +1,14 @@
+@import '../theme/vars';
+
+body * {
+  box-sizing: border-box;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.inner {
+  width: 100% - 2 * $gutter-std;
+  margin: 0 auto;
+}
