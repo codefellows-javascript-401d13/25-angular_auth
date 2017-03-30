@@ -1,0 +1,10 @@
+@import "../theme/vars";
+
+header {
+  box-sizing: border-box;
+  background: $brand-primary;
+  width: 80vw;
+  height: 15vh;
+  margin: 0 auto;
+  color: $white;
+}
