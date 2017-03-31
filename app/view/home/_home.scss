@@ -1,0 +1,22 @@
+.home{
+  position: relative;
+  h2{
+    margin-top: 100px;
+    margin-left: 10%;
+  }
+  ul{
+    margin-top: 20px;
+    li{
+      background: #444;
+      width: 80%;
+      border-radius: 10px;
+      margin: 30px auto;
+      height: 60px;
+      overflow: auto;
+      span{
+        display: block;
+        margin: 10px 20px;
+      }
+    }
+  }
+}
