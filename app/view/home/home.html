@@ -2,9 +2,6 @@
   <create-gallery></create-gallery>
   <h2>Galleries</h2>
   <ul>
-    <li ng-repeat="gallery in homeCtrl.galleries">
-      <span>name: {{gallery.name}}</span>
-      <span>desc: {{gallery.desc}}</span>
-    </li>
+    <gallery-item ng-repeat="item in homeCtrl.galleries" gallery="item"></gallery-item>
   </ul>
 </section>

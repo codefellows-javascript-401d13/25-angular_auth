@@ -16,6 +16,6 @@ function EditGalleryController($log, galleryService){
 
   this.updateGallery = function(){
     $log.debug('editGalleryCtrl.updateGallery');
-    galleryService.editGallery(this.gallery._id, this.gallery);
+    galleryService.updateGallery(this.gallery._id, this.gallery);
   };
 }
