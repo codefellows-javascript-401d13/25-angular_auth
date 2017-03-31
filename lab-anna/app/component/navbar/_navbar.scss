@@ -1,13 +1,18 @@
 @import "../../scss/lib/theme/vars";
 
-img {
-  height: 5vw;
-  width: 5vw;
-  margin: 2vw;
-}
-
-h2 {
-  font: $font-std;
-  font-size: 4vw;
+nav {
   display: inline-block;
+  float: right;
+  vertical-align: top;
+  margin: 3vw 3vw;
+
+  .btn-sm {
+    background: $brand-secondary;
+    display: inline-block;
+    border-radius: $btn-radius;
+    border: none;
+    height: 3vw;
+    width: 12vw;
+    font-size: 1.6vw;
+  }
 }
