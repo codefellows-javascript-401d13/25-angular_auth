@@ -1,3 +1,4 @@
+<section class="styling">
 <li class = "gallery-item">
   <div class = "current-item" ng-if="!galleryItemCtrl.showEditGallery">
     <div>
@@ -14,10 +15,14 @@
 
     <edit-gallery ng-if="galleryItemCtrl.showEditGallery" gallery="galleryItemCtrl.gallery"></edit-gallery>
 
-    <span ng-click="galleryItemCtrl.showEditGallery = !galleryItemCtrl.showEditGallery">edit</span>
+    <button class ="delete-btn-std" ng-click="galleryItemCtrl.deleteGallery()">delete</button>
 
-    <span ng-click="galleryItemCtrl.deleteGallery()">delete</span>
+    <button class ="btn-std" ng-click="galleryItemCtrl.showEditGallery = !galleryItemCtrl.showEditGallery">edit</button>
+
   </li>
+</section>
 
+
+<!-- <button class="btn-std" ng-click="navbarCtrl.logout()">logout</button> -->
 
   <!-- li is meaning each gallery item. click edit, and it shows the edit gallery option. and the item label with name and description hides.. binds it from the model to the view -->
