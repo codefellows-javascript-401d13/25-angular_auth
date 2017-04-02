@@ -3,7 +3,7 @@
 
   <div class="clearfix"></div>
   <ul>
-    <span class="prompt2">Galleries</span>
+    <span class="prompt2" ng-if="homeCtrl.galleries.length > 0">Galleries</span>
     <gallery-item ng-repeat="item in homeCtrl.galleries" gallery="item"></gallery-item>
   </ul>
 </section>

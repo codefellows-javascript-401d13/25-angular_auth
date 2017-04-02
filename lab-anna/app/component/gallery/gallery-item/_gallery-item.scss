@@ -16,12 +16,16 @@
       font-weight: bold;
     }
   }
+
+  .gallery-item {
+    margin-bottom: 4vw;
+
+    .gallery-item {
+      margin-bottom: 4vw;
+    }
+  }
 }
 
 .sm-btns {
   margin-right: 2.3vw;
-}
-
-.gallery-item {
-  margin-bottom: 4vw;
 }

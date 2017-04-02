@@ -14,12 +14,12 @@
   <edit-gallery ng-if="galleryItemCtrl.showEditGallery" gallery="galleryItemCtrl.gallery"></edit-gallery>
 
   <div class="sm-btns">
-    <span class="btn-gallery"
+    <span class="btn-gallery" ng-if="!galleryItemCtrl.showEditGallery"
     ng-click="galleryItemCtrl.showEditGallery = !galleryItemCtrl.showEditGallery">
     edit
   </span>
-  <span class="btn-gallery" ng-click="galleryItemCtrl.deleteGallery()">delete</span>
-  </div>
+  <span class="btn-gallery" ng-if="!galleryItemCtrl.showEditGallery" ng-click="galleryItemCtrl.deleteGallery()">delete</span>
+</div>
 
   <div class="clearfix"></div>
 </li>
