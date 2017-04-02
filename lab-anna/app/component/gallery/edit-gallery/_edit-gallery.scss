@@ -28,11 +28,13 @@ fieldset {
 fieldset:first-child {
   .input-std {
     width: 80%;
+    background: $brand-primary * 2.5;
   }
 }
 
 fieldset:last-child {
   .input-std {
     width: 75%;
+    background: $brand-primary * 2.5;
   }
 }
