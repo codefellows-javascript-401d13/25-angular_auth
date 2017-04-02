@@ -1,8 +1,9 @@
 @import "../theme/vars";
 
 main {
-  min-height: 100vh;
+  min-height: 150vh;
   width: 80vw;
   margin: 0 auto;
   background: $brand-secondary;
+  padding-bottom: 3vw;
 }
