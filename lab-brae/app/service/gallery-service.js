@@ -115,7 +115,7 @@ function galleryService($q, $log, $http, authService) {
   service.deleteGallery = function(galleryID) {
     $log.debug('galleryService.deleteGallery');
 
-    return authSerivce.getToken()
+    return authService.getToken()
     .then( token => {
       let url = `${__API_URL__}/api/gallery/${galleryID}`;
       let config = {
@@ -130,7 +130,7 @@ function galleryService($q, $log, $http, authService) {
       for (let i=0; i < service.galleries.length; i++) {
         let current = service.galleries[i];
         if(current._id === galleryID) {
-          service.gallery.splice(i, 1);
+          service.galleries.splice(i, 1);
           break;
         }
       }
