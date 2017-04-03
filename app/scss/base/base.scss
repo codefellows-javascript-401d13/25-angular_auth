@@ -1,0 +1,36 @@
+html {
+  height: 100%;
+}
+body {
+  background: $grey;
+  font-family: helvetica;
+  width: 80%;
+  margin: 0 auto;
+  min-height: 800px;
+  position: relative;
+  padding-bottom: 5vw;
+}
+
+.btn-std {
+  background: $darkgrey;
+  color: $white;
+  border-radius: 3px;
+  font-size: 1.2vw;
+  padding: 1vw 5vw;
+}
+
+.btn-alt {
+  background: $white;
+  color: $darkgrey;
+  border-radius: 3px;
+  font-size: 1.2vw;
+  padding: 1vw 5vw;
+}
+
+input {
+  width: 90%;
+  margin: 0 $gutter $gutter;
+  height: 3vw;
+  border-radius: 3px;
+  text-indent: $gutter-sm;
+}
