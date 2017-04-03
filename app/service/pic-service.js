@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports['$q', '$log', '$http', 'Upload', 'authService', picService];
+module.exports = ['$q', '$log', '$http', 'Upload', 'authService', picService];
 
 function picService($q, $log, $http, Upload, authService) {
   $log.debug('picService');
@@ -9,7 +9,8 @@ function picService($q, $log, $http, Upload, authService) {
 
   service.uploadGalleryPic = function(galleryData, picData) {
     $log.debug('service.uploadGalleryPic');
-
+    $log.log('ugp galleryData', galleryData);
+    $log.log('ugp picData', picData);
     return authService.getToken()
     .then( token => {
       let url = `${__API_URL__}/api/gallery/${galleryData._id}/pic`;
@@ -31,6 +32,7 @@ function picService($q, $log, $http, Upload, authService) {
     })
     .then( res => {
       galleryData.pics.unshift(res.data);
+      $log.log('res.data', res.data);
       return res.data;
     })
     .catch( err => {
