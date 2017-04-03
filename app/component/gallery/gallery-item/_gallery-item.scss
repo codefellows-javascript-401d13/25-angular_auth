@@ -1,0 +1,21 @@
+@import '../../../scss/lib/theme/vars';
+
+.current-item{
+   background-color:grey;
+   padding:20px;
+   margin-top:175px;
+   margin-bottom:30px;
+   border-radius: 10px 10px 10px;
+
+   .item-label{
+      font-size: 2vw;
+      color:rgb(57, 56, 56);
+
+   }
+}
+
+h3{
+   font-size: 2vw;
+   color:rgb(34, 33, 33);
+   padding: 30px;
+}
