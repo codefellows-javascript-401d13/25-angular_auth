@@ -1,0 +1,29 @@
+@import "../../scss/lib/theme/vars";
+  .navbar{
+    background-color: $brand-secondary;
+    color: $white;
+    height:100px;
+
+  h2{
+    display: inline-block;
+    font-size: 35px;
+    vertical-align: middle;
+    position: relative;
+    margin-left: 104px;
+    margin-top: 27px;
+    color: lightgrey;
+  }
+  img {
+    position: absolute;
+    height: 80px;
+    margin-left: 15px;
+    margin-top: 10px;
+  }
+  button{
+    margin-top: -40px;
+    margin-right: 20px;
+    border-radius: 10px 10px 10px;
+    background-color: lightgrey ;
+    color: $brand-primary;
+  }
+}
