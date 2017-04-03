@@ -1,0 +1,58 @@
+
+body{
+  background-color: $primaryColor;
+  font-family: $fontStack;
+  display: relative;
+  font-size: $secondaryTextSize;
+
+  a{
+    text-decoration: none;
+    font-weight: bold;
+    color: $secondaryColor;
+  }
+  .clearfix{
+    clear: both;
+  }
+
+  main {
+    margin:$gutter;
+    min-height: calc(100vh - 70px);
+
+  }
+  form{
+    width:100%;
+  }
+  input{
+    width: 100%;
+    box-sizing:border-box;
+    border: 1px solid $tertiaryColor;
+    margin: $gutter 0;
+    font-size: $secondaryTextSize;
+    padding:1%;
+    @include rounded(3px);
+  }
+
+  .btn-std{
+    @extend input;
+    width: unset;
+    padding: 1% $gutter*2.5;
+    background-color: $secondaryColor;
+    color: $white;
+    font-weight: 300;
+    float:right;
+  }
+
+  footer{
+    background-color: $tertiaryColor;
+    height:70px;
+    width: 100%;
+    // position: absolute;
+    // bottom: 0px;
+  }
+  pre{
+    max-width:100%;
+    font-style: monospace;
+    overflow: auto;
+  }
+}
+

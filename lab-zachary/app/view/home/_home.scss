@@ -1,0 +1,8 @@
+@import '../../scss/lib/base/global-vars';
+
+.home-content {
+  h2 {
+    font-size: $primaryTextSize * .9;
+    margin-bottom: $gutter;
+  }
+}

@@ -1,0 +1,29 @@
+<section class="landing-content">
+
+    <div class="join-container"
+    ng-if="landingCtrl.showSignup">
+    <h2>sign up.</h2>
+    <div class="join-inner">
+      <signup></signup>
+      <p>already a member?</p> <!-- look at ng routes at # and #! conventions -->
+      <a href="/#/join#login"
+        ng-click = "landingCtrl.showSignup=false">
+        sign in here.
+      </a>
+    </div>
+  </div>
+
+    <div class="join-container"
+    ng-if="!landingCtrl.showSignup">
+    <h2>sign in.</h2>
+
+    <div class="join-inner">
+    <login></login>
+      <p>want to sign up?</p>
+      <a href="/#/join#login"
+        ng-click = "landingCtrl.showSignup=true">
+        sign up here
+      </a>
+    </div>
+  </div>
+</section>
