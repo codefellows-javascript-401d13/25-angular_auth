@@ -1,0 +1,36 @@
+$brand1 : #5a5d63;
+$brand2 : #aaacaf;
+$brand3 : white;
+$footer: #727882;
+
+//spacing
+$gtter : 30px;
+$btnpad : 3%;
+$radius : 3px;
+
+// fieldset {
+//   background-color: $brand2;
+//   color: black;
+//   border-radius: $radius;
+//   height: 10%;
+//   width: 15%;
+//   font-size: 18%;
+// };
+label{
+  position: relative;
+  left: 2%;
+  top: 2%;
+  padding: 2%;
+  font-family: helvetica;
+};
+
+.btn-std{
+  padding: 1% 4%;
+  border-radius: 15%;
+  background-color: $brand1;
+  color: white;
+  font-size: 95%;
+  border: none;
+  float: right;
+  margin-right: 2%;
+};
