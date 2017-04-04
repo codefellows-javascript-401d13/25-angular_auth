@@ -1,0 +1,59 @@
+
+
+header{
+  height: 8vw;
+  width: 100%;
+  background-color: $brand1;
+};
+
+.input-std{
+  padding: 2% 8%;
+  margin: 2%;
+  margin-right: 10%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+};
+.clearfix{
+  clear: both;
+};
+.btn-std{
+  padding: 1% 5%;
+  border-radius: $radius;
+  background-color: $brand1;
+  color: white;
+  border: none;
+  float: right;
+  margin-right: 2%;
+  // position: absolute;
+  // left: 14vw;
+  // top: 10vw;
+};
+a,p{
+  display: inline-block;
+  float: right;
+  // float: right;
+  left: 52%;
+  right: 2%;
+  color: $brand1;
+};
+a{
+  text-decoration: none;
+  color: black;
+};
+
+
+
+body {
+  background-color: $brand2;
+  height: 65%;
+};
+
+footer {
+  background-color: $footer;
+  height: 10vw;
+  width: 100%;
+  position: absolute;
+  bottom: -30px;
+};
