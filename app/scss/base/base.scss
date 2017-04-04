@@ -11,6 +11,12 @@ body {
   padding-bottom: 5vw;
 }
 
+.clearfix {
+  height: 0px;
+  width: 100%;
+  clear: both;
+}
+
 .btn-std {
   background: $darkgrey;
   color: $white;

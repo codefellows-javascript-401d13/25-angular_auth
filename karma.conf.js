@@ -1,5 +1,5 @@
 const webpackConfig = require('./webpack.config.js');
-webpackConfig.entry = {};
+delete webpackConfig.entry;
 
 module.exports = function(config) {
   config.set({
@@ -7,19 +7,22 @@ module.exports = function(config) {
     basePath: '',
     frameworks: ['jasmine'],
     files: [
-      'test/**/*-test.js'
+      'app/entry.js',
+      'test/**/*-test.js',
+      'node_modules/angular-mocks/angular-mocks.js'
     ],
     exclude: [
     ],
     preprocessors: {
-      'test/**/*-test.js': ['webpack']
+      'test/**/*-test.js': ['webpack'],
+      'app/entry.js': ['webpack']
     },
     reporters: ['mocha'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['PhantomJS'],
+    browsers: ['Chrome'],
     singleRun: false,
     concurrency: Infinity
   });

@@ -1,12 +1,14 @@
 {
-  "name": "glgramfrontend",
+  "name": "glgram",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "./node_modules/webpack/bin/webpack.js",
-    "watch": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot",
-    "lint": "eslint ."
+    "build-watch": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot",
+    "lint": "eslint .",
+    "test": "./node_modules/karma/bin/karma start --single-run",
+    "test-watch": "./node_modules/karma/bin/karma start"
   },
   "keywords": [],
   "author": "Gary Lundgren",
@@ -42,7 +44,9 @@
     "angular-mocks": "^1.6.3",
     "jasmine-core": "^2.5.2",
     "karma": "^1.5.0",
+    "karma-chrome-launcher": "^2.0.0",
     "karma-jasmine": "^1.1.0",
+    "karma-mocha-reporter": "^2.2.3",
     "karma-phantomjs-launcher": "^1.0.4",
     "karma-webpack": "^2.0.3",
     "webpack-dev-server": "^2.4.2"
