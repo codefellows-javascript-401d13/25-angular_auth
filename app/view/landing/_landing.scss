@@ -1,0 +1,23 @@
+@import '../../scss/theme/vars';
+.landing {
+
+  color: $darkgrey;
+  p {
+    padding-top: $gutter-sm / 2;
+    margin-left: 71%;
+    margin-right: $gutter-sm;
+    clear: both;
+    display: inline;
+    float: left;
+  }
+
+  a {
+    display: inline;
+    float: left;
+    padding-top: $gutter-sm / 2;
+    margin-right: $gutter;
+    text-decoration: none;
+    color: $black;
+  }
+
+}

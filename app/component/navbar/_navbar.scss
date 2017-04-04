@@ -1,0 +1,19 @@
+@import "../../scss/theme/vars";
+
+.btn-alt {
+  float: right;
+  margin-right: $gutter;
+}
+
+.logo {
+  display: inline-block;
+  float: left;
+  margin: 0 $gutter;
+  height: 3vw;
+  width: 3vw;
+  background: $white;
+}
+
+h2 {
+  float: left;
+}
