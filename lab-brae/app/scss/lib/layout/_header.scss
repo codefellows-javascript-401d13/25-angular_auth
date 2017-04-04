@@ -1,0 +1,14 @@
+@import '../theme/vars';
+
+header {
+  background: $brand-secondary;
+  font-family: Helvetica;
+  color: $white;
+  height: 8vw;
+  margin-top: 5%;
+
+  h2 {
+    font-size: 4vw;
+  }
+
+}
