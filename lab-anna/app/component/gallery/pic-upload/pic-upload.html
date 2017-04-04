@@ -1,20 +1,20 @@
-<section class="upload-pic">
+<section class="pic-upload">
   <form
     ng-submit="uploadPicCtrl.uploadPic()"
     novalidate>
 
-    <h3>upload a new pic</h3>
+    <h3 class="prompt">Upload a new pic</h3>
 
     <fieldset>
-      <input class="input-std" type="text" ng-model="uploadPicCtrl.pic.name" placeholder="name">
-      <input class="input-std" type="text" ng-model="uploadPicCtrl.pic.desc" placeholder="desc">
+      <input class="input-pic" type="text" ng-model="uploadPicCtrl.pic.name" placeholder="name">
+      <input class="input-pic" type="text" ng-model="uploadPicCtrl.pic.desc" placeholder="desc">
     </fieldset>
 
     <div>
       <p class="grab-img"
         ngf-select
         ng-model="uploadPicCtrl.pic.file">
-        select a pic to upload
+        Select a pic to upload
       </p>
 
       <button class="btn-std">upload</button>

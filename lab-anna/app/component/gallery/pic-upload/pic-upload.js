@@ -1,9 +1,9 @@
 'use strict';
 
-require('./_upload-pic.scss');
+require('./_pic-upload.scss');
 
 module.exports = {
-  template: require('./upload-pic.html'),
+  template: require('./pic-upload.html'),
   controller: ['$log', 'picService', UploadPicController],
   controllerAs: 'uploadPicCtrl',
   bindings: {
