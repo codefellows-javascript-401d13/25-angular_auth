@@ -39,5 +39,29 @@ function picService($q, $log, $http, Upload, authService) {
     });
   };
 
+  service.deleteGalleryPic = function(galleryData, picData) {
+    $log.debug('service.deleteGalleryPic');
+
+    return authService.getToken()
+    .then( token => {
+      let url = `${__API_URL__}/api/gallery/${galleryData._id}/pic/${picId}`;
+      let config = {
+        header: {
+          Authorization: `Bearer ${token}`
+        }
+      };
+      
+      return $http.delete(url, config);
+    })
+    .then(res => {
+      galleryData.pics.shift();
+      return res.data;
+    })
+    .catch( err => {
+      $log.error(err.message);
+      return $q.reject(err);
+    });
+  };
+
   return service;
 };
