@@ -1,0 +1,23 @@
+// @import "vars.scss";
+@import "reset.scss";
+@import "base.scss";
+
+@import "../component/gallery/create-gallery/create-gallery.scss";
+// @import "../component/navbar/navbar.scss";
+//
+// @import "../view/home/home.scss";
+
+
+
+body {
+  background: $brand-secondary;
+}
+
+a{
+  text-decoration: none;
+}
+
+.input-std {
+  border-radius: 7px;
+  text-align: center;
+}
