@@ -1,0 +1,30 @@
+.gallery-item{
+  .current-item{
+    background: #444;
+    width: 80%;
+    border-radius: 10px;
+    margin: 10px auto;
+    div{
+      overflow: auto;
+      width:80%;
+      span{
+        float:left;
+        margin-top: 10px;
+        display: block;
+        margin: 10px 20px;
+      }
+    }
+  }
+  .editremove{
+    clear:both;
+    display:block;
+    margin-left: 60%;
+    width: 30%;
+    span{
+      padding-left: 10%;
+      padding-right: 10%;
+      border-radius: 10px;
+      background-color: #444;
+    }
+  }
+}
