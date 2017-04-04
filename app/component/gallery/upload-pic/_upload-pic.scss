@@ -1,0 +1,33 @@
+.upload-pic{
+  background: #444;
+  border-radius: 10px;
+  overflow: auto;
+  h3{
+    margin-top: 10px;
+  }
+  form {
+    fieldset{
+      width: 80%;
+      margin: 10px auto;
+      input{
+        width: 100%;
+        margin: 10px auto;
+      }
+    }
+    div{
+      p{
+        margin-left: 30%;
+        margin-right: 5%;
+        text-decoration: underline;
+        float: left;
+        &:hover{
+          cursor: pointer;
+        }
+      }
+      button{
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+    }
+  }
+}
