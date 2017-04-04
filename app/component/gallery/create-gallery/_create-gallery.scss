@@ -1,0 +1,26 @@
+.create-gallery{
+  form{
+    fieldset{
+      margin: 20px auto;
+      label{
+        margin-left: 10%;
+      }
+      input{
+        display: block;
+        width: 80%;
+        height: 30px;
+        margin: 20px auto;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+    }
+    button{
+      position: absolute;
+      padding-left: 15%;
+      padding-right: 15%;
+      right:10%;
+      height: 60px;
+    }
+  }
+}
