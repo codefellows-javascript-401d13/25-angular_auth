@@ -49,7 +49,11 @@ function picService($q, $log, $http, Upload, authService){
       return $http.delete(url, config);
     })
     .then(res => {
-      galleryData.pics.shift();
+      for(var i = 0; i < galleryData.pics.length; i++){
+        if(galleryData.pics[i]._id == picId.toString()){
+          galleryData.pics.splice(i, 1);
+        }
+      }
       return res.data;
     })
     .catch(err => {
