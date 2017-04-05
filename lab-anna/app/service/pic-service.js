@@ -1,8 +1,8 @@
 'use strict';
 
-module.exports = ['$q', '$log', '$http', 'Upload', 'authService', picService];
+module.exports = ['$q', '$log', '$http', 'Upload', 'authService', 'galleryService', picService];
 
-function picService($q, $log, $http, Upload, authService) {
+function picService($q, $log, $http, Upload, authService, galleryService) {
   $log.debug('picService');
 
   let service = {};
@@ -55,17 +55,17 @@ function picService($q, $log, $http, Upload, authService) {
     })
     .then( res => {
       let gallery = null;
-      for (let i=0; i <service.galleries.length; i++) {
-        let current = service.galleries[i];
+      for (let i=0; i<galleryService.galleries.length; i++) {
+        let current = galleryService.galleries[i];
         if (current._id === galleryID) {
           gallery = current;
           break;
         }
       }
-      for (let i=0; i<gallery.pics.length; i++) {
-        let current = gallery.pics[i];
+      for (let j=0; j<gallery.pics.length; j++) {
+        let current = gallery.pics[j];
         if (current._id === picID) {
-          gallery.pics.splice(i, 1);
+          gallery.pics.splice(j, 1);
           break;
         }
       }
