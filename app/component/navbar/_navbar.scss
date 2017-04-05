@@ -1,0 +1,36 @@
+@import '../../scss/lib/theme/vars';
+
+.navbar {
+  background-color: $secondarycolor;
+  color: $white;
+  height:90px;
+  img{
+    height: 70px;
+    width: auto;
+    margin: 1%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  h1{
+    display: inline-block;
+    font-size: 2vw;
+    vertical-align: middle;
+  }
+  button{
+    margin-top: -85px;
+
+  }
+}
+.logout-btn-std{
+
+  width: unset;
+  padding: 0 $gutter-std*2.5;
+  background-color: rgb(194, 195, 198);
+  color: $black;
+  font-size: x-large;
+  font-weight: lighter;
+  height:50px;
+  float:right;
+  margin-right:0px;
+  border-radius: 10px 10px 10px
+}
