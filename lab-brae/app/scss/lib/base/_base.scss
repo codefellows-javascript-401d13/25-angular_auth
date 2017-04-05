@@ -1,0 +1,14 @@
+@import '../theme/vars';
+
+button {
+  border: none;
+  border-radius: 3px;
+  background: $brand-secondary;
+  color: $white;
+  padding: 1% 5%;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
