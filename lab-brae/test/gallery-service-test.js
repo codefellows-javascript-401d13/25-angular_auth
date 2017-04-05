@@ -41,6 +41,20 @@ describe('Gallery Service', function() {
     });
   });
 
-  // TODO: create another test for deleting a gallery
-  // expectDELETE, give it url which will hit endpoint, pass in headers, res with 204
-})
+  describe('galleryService.deleteGallery', () => {
+    it('should delete a gallery', () => {
+      let galleryID = 'testingID';
+      let headers = {
+        Authorization: 'Bearer test token',
+        Accept: 'application/json, text/plain, */*'
+      };
+
+      this.$httpBackend.expectDELETE('http://localhost:8000/api/gallery/testingID', headers)
+      .respond(204);
+
+      this.galleryService.deleteGallery(galleryID);
+      this.$httpBackend.flush();
+      this.$rootScope.$apply();
+    });
+  });
+});
