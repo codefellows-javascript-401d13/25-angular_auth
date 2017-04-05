@@ -1,0 +1,41 @@
+@import "../../../scss/lib/theme/vars";
+
+
+.gallery-item{
+
+  .current-item{
+    border-radius: 10px;
+    padding: 1.25vw 1.25vw;
+    line-height: 5vw;
+    margin: 2.5vw 0vw;
+
+    span {
+      font-size: 2.4vw;
+    }
+
+  }
+
+
+  button{
+    color: black;
+  }
+
+  // form{
+  //     fieldset{
+  //       margin: 20px auto;
+  //       label{
+  //         margin-left: 10%;
+  //       }
+  //       input{
+  //         display: block;
+  //         width: 80%;
+  //         height: 30px;
+  //         margin: 20px auto;
+  //         border-radius: 10px;
+  //         text-align: center;
+  //       }
+}
+
+// .edit{
+//
+// }
