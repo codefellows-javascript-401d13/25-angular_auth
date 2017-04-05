@@ -50,7 +50,11 @@ function galleryService($q, $log, $http, authService) {
       };
 
       // TODO: create $http.delete request
+    })
+    .then( res => {
+      service.galleries = [];
     });
+
   };
 
   service.fetchGalleries = function() {
