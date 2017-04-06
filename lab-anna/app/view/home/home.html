@@ -7,7 +7,7 @@
   <ul>
     <span class="prompt2" ng-if="homeCtrl.galleries.length > 0">Galleries</span>
     <gallery-item
-      ng-repeat="item in homeCtrl.galleries"
+      ng-repeat="item in homeCtrl.galleries | gallerySearch: homeCtrl.gallerySearchTerm"
       gallery="item"
       delete-done="homeCtrl.galleryDeleteDone(galleryData)"
       ng-click="homeCtrl.currentGallery = item">
