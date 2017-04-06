@@ -1,0 +1,50 @@
+@import '../theme/vars';
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  border: none;
+  border-radius: 3px;
+  background: $brand-secondary;
+  color: $white;
+  padding: 1% 5%;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 1.5vw 2vw;
+  font-size: 2vw;
+  border: solid 1px $brand-primary;
+  border-radius: 3px;
+  box-sizing: border-box;
+
+  a:focus {
+    background: $brand-primary;
+    color: $white;
+  }
+}
+
+input[type="password"] {
+  @extend input[type="text"];
+}
+
+input[disabled="disabled"] {
+  background: #e3e3e3;
+}
+
+.input-std {
+  @extend input[type="text"];
+  display: inline-block;
+}
+
+fieldset {
+  margin: 2% 0;
+}
