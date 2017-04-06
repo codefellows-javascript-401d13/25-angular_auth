@@ -44,14 +44,13 @@ describe('Gallery Service', function() {
   describe('galleryService.deleteGallery', () => {
     it('should delete a gallery', () => {
       let headers = {
-        'Content-Type': 'application/json',
-        Accept: 'application/json',
-        Authorization: 'Bearer test token'
+        Authorization: 'Bearer test token',
+        Accept: 'application/json, text/plain, */*'
       };
 
       let galleryID = 'yiue3989';
 
-      this.$httpBackend.expectDELETE(`http://localhost:3000/api/gallery/${galleryID}`)
+      this.$httpBackend.expectDELETE(`http://localhost:3000/api/gallery/${galleryID}`, headers)
       .respond(204);
 
       this.galleryService.deleteGallery(galleryID);
@@ -59,5 +58,4 @@ describe('Gallery Service', function() {
       this.$rootScope.$apply();
     });
   });
-  // TODO: create another test for deleting a gallery
 });
