@@ -1,0 +1,20 @@
+<section class="home">
+  <div class="inner">
+
+    <h2>Create New Swaggerry</h2>
+    <create-gallery></create-gallery>
+
+    <h2>Galleries</h2>
+    <ul>
+      <gallery-item
+        ng-repeat="item in homeCtrl.galleries"
+        gallery="item"
+        delete-done="homeCtrl.galleryDeleteDone(item)"
+        ng-click="homeCtrl.currentGallery = item"
+        ></gallery-item>
+    </ul>
+
+    <thumbnail-container ng-if="homeCtrl.currentGallery" gallery="homeCtrl.currentGallery"></thumbnail-container>
+
+  </div>
+</section>
