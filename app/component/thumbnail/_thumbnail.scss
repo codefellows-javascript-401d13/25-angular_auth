@@ -1,0 +1,22 @@
+$brand1 : #5a5d63;
+
+.clearfix{
+  clear:both;
+};
+img{
+  position: relative;
+  width: 90%;
+  bottom: 0%;
+  margin-right: 5%;
+
+};
+#idherpes{
+  position: absolute;
+  float: left;
+  padding: 1.5% 4%;
+  margin-left: 80%;
+  bottom: -32%;
+  background-color: $brand1;
+  color: white;
+  border-radius: 3px;
+};

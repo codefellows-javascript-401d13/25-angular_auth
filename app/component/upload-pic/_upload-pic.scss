@@ -1,0 +1,61 @@
+$brand1 : #5a5d63;
+$brand2 : #aaacaf;
+$brand3 : white;
+$footer: #727882;
+
+//spacing
+$gtter : 30px;
+$btnpad : 3%;
+$radius : 3px;
+h2{
+  margin-bottom: 5%;
+};
+h3{
+  position: relative;
+  top: 5%;
+  float: left;
+  left: 3%;
+  text-decoration: underline;
+
+};
+
+.input-pic{
+    // outline: $footer;
+    width: 80%;
+    display: block;
+    position: relative;
+    float: left;
+    margin-left: 3%;
+    margin-top: 2%;
+    padding: 2% 5%;
+    background-color: $footer;
+    border-style: none;
+    border-radius: 3px;
+};
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+};
+
+p{
+ display: inline-block;
+ position: relative;
+  top: 15%;
+  float: left;
+  left: 14%;
+  color: black;
+  text-decoration: underline;
+  &:hover{
+    cursor: pointer;
+  }
+};
+// .input-pic{
+//   padding: 2% 8%;
+//   margin: 2%;
+//   margin-right: 10%;
+//   width: 80%;
+
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+// };
