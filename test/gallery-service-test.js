@@ -4,7 +4,7 @@ describe('Gallery Service', function() {
 
   beforeEach(() => {
     angular.mock.module('brianGram');
-    angular.mock.inject(($rootScope, authService, galleryService, $window, $httpBackend) => {
+    angular.mock.inject(( $rootScope, authService, galleryService, $window, $httpBackend) => {
       this.$window = $window;
       this.$rootScope = $rootScope;
       this.authService = authService;
@@ -13,7 +13,7 @@ describe('Gallery Service', function() {
     });
   });
 
-  describe('galleryService.createGallery', () => {
+  describe('galleryService.createGallery()', () => {
     it('should create a new gallery', () => {
       let galleryData = {
         name: 'example gallery',
@@ -26,7 +26,7 @@ describe('Gallery Service', function() {
         Authorization: 'Bearer test token'
       };
 
-      this.$httpBackend.expectPOST('http://localhost:8000/api/gallery', galleryData, headers)
+      this.$httpBackend.expectPOST('http://localhost:3000/api/gallery', galleryData, headers)
       .respond(200, {
         _id: '1234',
         username: 'testuser',
@@ -41,5 +41,18 @@ describe('Gallery Service', function() {
     });
   });
 
-  // TODO: create another test for deleting a gallery
+  describe('galleryService.deleteGallery()', () => {
+    it('should delete a gallery', () => {
+      let galleryID = 'testid';
+      let headers = {
+        Authorization: 'Bearer test token',
+        Accept: "application/json, text/plain, */*",
+      };
+
+      this.$httpBackend.expectDELETE('http://localhost:3000/api/gallery/testid', headers).respond(204);
+      this.galleryService.deleteGallery(galleryID);
+      this.$httpBackend.flush();
+      this.$rootScope.$apply();
+    })
+  });
 });
