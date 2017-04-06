@@ -12,6 +12,8 @@ describe('Edit Gallery Component', function() {
     });
   });
 
+
+
   it('should contain the proper component bindings', () => {
     let mockBindings = {
       gallery: {
@@ -26,6 +28,7 @@ describe('Edit Gallery Component', function() {
 
     this.$rootScope.$apply();
   });
+
 
   describe('editGalleryCtrl.updateGallery()', () => {
     it('should make a valid PUT request', () => {
@@ -54,6 +57,9 @@ describe('Edit Gallery Component', function() {
       editGalleryCtrl.gallery.name = 'updated name';
       editGalleryCtrl.gallery.desc = 'updated description';
       editGalleryCtrl.updateGallery();
+
+      expect(editGalleryCtrl.gallery.name).toEqual(mockBindings.gallery.name);
+      expect(editGalleryCtrl.gallery.desc).toEqual(mockBindings.gallery.desc);
 
       this.$httpBackend.flush();
       this.$rootScope.$apply();
