@@ -1,6 +1,8 @@
 <section class="home">
   <create-gallery></create-gallery>
 
+  <input class="srch" ng-model="homeCtrl.gallerySearchTerm" type="text" placeholder="search">
+
   <div class="clearfix"></div>
   <ul>
     <span class="prompt2" ng-if="homeCtrl.galleries.length > 0">Galleries</span>
