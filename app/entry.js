@@ -45,3 +45,10 @@ context.keys().forEach( key => {
   let module = context(key);
   cfgram.filter(name, module); //name is from the file name.
 });
+
+context = require.context('./directive/', true, /\.js$/);
+context.keys().forEach( key => { //for each key let name.. //
+  let name = camelcase(path.basename(key, '.js'));//path is a native node method
+  let module = context(key);
+  cfgram.diredctive(name, module); //name is from the file name.
+});

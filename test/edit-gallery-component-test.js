@@ -52,14 +52,11 @@ describe('Edit Gallery Component', function (){
       };
 
       let editGalleryCtrl = this.$componentController('editGallery', null, mockBindings);
-      editGalleryCtrl.gallery.name = 'updated name';
-      editGalleryCtrl.gallery.desc = 'updated desc';
-      editGalleryCtrl.updateGallery()
-        .then( gallery => {
-          expect(editGalleryCtrl.gallery.name).toEqual('updated name');
-          expect(editGalleryCtrl.gallery.desc).toEqual('updated desc');
-          this.$rootScope.$apply();
-        });
+      editGalleryCtrl.updateGallery(editGalleryCtrl.gallery._id, editGalleryCtrl.gallery);
+      expect(editGalleryCtrl.gallery.name).toEqual('updated name');
+      expect(editGalleryCtrl.gallery.desc).toEqual('updated desc');
+      this.$httpBackend.flush();
+      this.$rootScope.$apply();
     });
   });
 });

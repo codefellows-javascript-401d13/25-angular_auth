@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = {
+module.exports =  function (){
   return {
     restrict: 'EAC', //element attributes class
     template: require('./social-icons.html'),
@@ -13,7 +13,7 @@ module.exports = {
   };
 };
 
-functions SocialIconsController() {
+function SocialIconsController() {
   this.icons = ['fb', 'twitter', 'instagram'];
 };
 //spritecow.com
