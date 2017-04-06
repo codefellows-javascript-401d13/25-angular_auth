@@ -1,0 +1,13 @@
+@import '../../../scss/lib/theme/vars';
+
+.signup-form {
+  margin-top: $gutter-std;
+
+  h2 {
+    margin: $gutter-sm 0;
+  }
+
+  button {
+    float: right;
+  }
+}
