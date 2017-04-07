@@ -14,7 +14,5 @@ module.exports =  function (){
 };
 
 function SocialIconsController() {
-  this.icons = ['fb', 'twitter', 'instagram'];
-};
-//spritecow.com
-//gliff icons svg
+  this.icons = ['facebook', 'twitter', 'instagram'];
+}

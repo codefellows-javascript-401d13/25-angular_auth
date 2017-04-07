@@ -1,0 +1,12 @@
+.social-media-icons {
+  ul {
+    li {
+      &:first-child{
+        background: url('../../assets/spriteSheet.png');
+        width: 128px;
+        height: 128px;
+        background-position: -5px -5px;
+    }
+  }
+}
+}
