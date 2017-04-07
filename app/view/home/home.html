@@ -7,7 +7,7 @@
 
   <ul> <!-- below here we made a file name called gallerySearch then we made that a filter. The pipe signifies were about to give it a filter  Were going through an array of galleries. -->
     <gallery-item
-      ng-repeat="item in homeCtrl.galleries | gallerySearch: homeCtrl.gallerySearchTerm"
+      ng-repeat="item in homeCtrl.galleries | gallerySearch: homeCtrl.gallerySearchTerm | uppercase"
       gallery="item"
       delete-done="homeCtrl.galleryDeleteDone(galleryData)"
       ng-click="homeCtrl.currentGallery = item"
