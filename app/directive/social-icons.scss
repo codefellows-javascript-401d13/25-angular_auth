@@ -1,0 +1,29 @@
+
+
+.socialIcons-twitter, .socialIcons-facebook, .socialIcons-instagram {
+  background-image: url('../../assets/socialIcons.png');
+  background-repeat: no-repeat;
+
+}
+
+.socialIcons-twitter {
+  height: 76px;
+  width: 100px;
+  background-position: -49px -52px;
+}
+
+.socialIcons-facebook {
+  height: 109px;
+  width:109px;
+  background-position: -53px -232px;
+}
+
+.socialIcons-instagram {
+  height: 84px;
+  width:92px;
+  background-position: -201px -41px;
+}
+
+nav ul{
+  display: inline-block;
+}

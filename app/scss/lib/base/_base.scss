@@ -1,0 +1,64 @@
+@import '../theme/vars';
+
+body{
+  background-color: $primarycolor;
+  font-family: times;
+  display: relative;
+
+
+  a{
+    text-decoration: none;
+    font-weight: bold;
+    color: $secondarycolor;
+  }
+  .clearfix{
+    clear: both;
+  }
+
+  main {
+    margin:$gutter-std;
+
+  form{
+    width:100%;
+  }
+  input{
+    width: 100%;
+    box-sizing:border-box;
+    border: 2px solid grey;
+    margin-top: $gutter-std /2;
+    margin-bottom: $gutter-std /2;
+    font-size: 25px;
+    text-align: left;
+    height: 60px;
+    padding:5px;
+    border-radius: 10px 10px 10px;
+
+    &:focus {
+    background: black;
+    color: lightgrey;
+  }
+  }
+
+  .btn-std{
+
+    width: 30%;
+    padding: 5px ;
+    background-color: $secondarycolor;
+    color: $white;
+    font-size: x-large;
+    font-weight: lighter;
+    height:70px;
+    float:right;
+    margin-right:0px;
+    border-radius: 10px 10px 10px
+  }
+}
+  footer{
+    background-color: grey;
+    height:70px;
+    width: 100%;
+    margin-top: 400px;
+    // position: absolute;
+    // bottom: 0px;
+  }
+}
