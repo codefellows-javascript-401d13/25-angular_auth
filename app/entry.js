@@ -8,7 +8,7 @@ const camelcase = require('camelcase');
 const uiRouter = require('angular-ui-router');
 const ngTouch = require('angular-touch');
 const ngAnimate = require('angular-animate');
-const ngFileUpload = require('ng-file-upload')
+const ngFileUpload = require('ng-file-upload');
 const path = require('path');
 
 const brianGram = angular.module('brianGram',[ngTouch, ngAnimate, uiRouter, ngFileUpload]);
@@ -34,4 +34,16 @@ context = require.context('./component/', true, /\.js$/);
 context.keys().forEach(key => {
   let name = camelcase(path.basename(key, '.js'));
   brianGram.component(name, context(key));
+});
+
+context = require.context('./filter/', true, /\.js$/);
+context.keys().forEach(key => {
+  let name = camelcase(path.basename(key, '.js'));
+  brianGram.filter(name, context(key));
+});
+
+context = require.context('./directive/', true, /\.js$/);
+context.keys().forEach(key => {
+  let name = camelcase(path.basename(key, '.js'));
+  brianGram.directive(name, context(key));
 });
