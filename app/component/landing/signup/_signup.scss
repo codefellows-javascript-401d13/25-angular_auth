@@ -1,0 +1,16 @@
+@import "../../../scss/lib/theme/vars";
+.signup {
+  background-color: $brand-primary;
+  color: black;
+
+  h3{
+    text-align: left;
+    margin-left: 1px;
+    font-size: 30px;
+  }
+
+  .btn-std{
+    position: relative;
+
+  }
+}

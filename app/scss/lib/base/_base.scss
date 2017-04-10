@@ -1,0 +1,51 @@
+@import "../theme/vars";
+
+body{
+    background-color: $brand-primary;
+    font-family: $font-std;
+    display: relative;
+
+    .clearfix{
+      clear: both;
+    }
+
+
+    main {
+      margin:$gutter-std;
+    }
+
+    input{
+      width: 100%;
+      box-sizing:border-box;
+      border: 1px solid $brand-primary *2;
+      margin: 3% 0;
+      font-size: 16px;
+      height: 56px;
+      padding:5px;
+    }
+    form{
+      width:100%;
+    }
+    .delete-btn-std{
+      @extend input;
+      width: 150px;
+      background-color: $brand-secondary * 3;
+      color: black;
+      float:right;
+      border-radius: 10px 10px 10px;
+
+    }
+
+    .btn-std{
+      @extend input;
+      width: 150px;
+      background-color: $brand-secondary;
+      color: $black;
+      font-weight: 200;
+      float:right;
+      border-radius: 10px 10px 10px;
+
+    }
+
+
+}
