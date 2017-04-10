@@ -1,7 +1,7 @@
 'use strict';
 
 
-// TODO  MAKE A SHOUTING FILTER AND ANOTHER ONE AND PLUG THEM IN, ALSO ICONS 
+// TODO  MAKE A SHOUTING FILTER AND ANOTHER ONE AND PLUG THEM IN, ALSO ICONS
 
 module.exports = function() {
   return function(galleries, searchTerm) {

@@ -1,5 +1,15 @@
 <section class="navbar">
 
+  <div uib-dropdown>
+    <button type="button" name="button" class="btn btn-primary" uib-dropdown-toggle>Dropdown <span class="caret"></span></button>
+
+    <ul class="dropdown-menu" uib-dropdown-menu>
+      <li><a href="#">A link</a></li>
+      <li><a href="#">B link</a></li>
+      <li><a href="#">C link</a></li>
+      <li><a href="#">D link</a></li>
+    </ul>
+  </div>
   <nav>
     <div ng-hide="navbarCtrl.hideButtons">
       <button class="btn-alt" ng-click="navbarCtrl.logout()">sign out</button>
