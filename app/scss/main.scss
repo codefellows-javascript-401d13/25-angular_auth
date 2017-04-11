@@ -4,11 +4,11 @@
 // bring in bootstrap componentes
 @import "./lib/bootstrap/custom-bootstrap";
 //  ::::: Base and Theme::::::::://
-@import "./lib/theme/vars";
+@import "lib/theme/vars";
 @import "./lib/base/base";
 // ::::: Layout :::::: //
 @import "./lib/layout/header";
-@import "./lib/layout/content";
+@import "./lib/layout/layout";
 @import "./lib/layout/footer";
 
 @import "../view/landing/landing";
@@ -20,5 +20,5 @@
 @import "../component/gallery/edit-gallery/edit-gallery";
 @import "../component/gallery/gallery-item/gallery-item";
 @import "../component/gallery/thumbnail/thumbnail";
-@import "../compenent/gallery/thumbnail-container/thumbnail-container";
-@import "../compenent/gallery/upload-pic/upload-pic";
+@import "../component/gallery/thumbnail-container/thumbnail-container";
+@import "../component/gallery/upload-pic/upload-pic";
