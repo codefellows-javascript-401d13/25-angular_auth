@@ -1,0 +1,178 @@
+
+
+header{
+  height: 10vw;
+  width: 100%;
+  background-color: $brand1;
+};
+
+.input-std{
+  padding: 2% 8%;
+  margin: 2%;
+  margin-right: 10%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+};
+.clearfix{
+  clear: both;
+};
+.btn-std{
+  padding: 1% 3%;
+  border-radius: $radius;
+  background-color: $brand1;
+  color: white;
+  border: none;
+  float: right;
+  margin-right: 2%;
+};
+a,p{
+  display: inline-block;
+  float: right;
+  left: 52%;
+  right: 2%;
+  color: $brand1;
+};
+a{
+  text-decoration: none;
+  color: black;
+};
+
+body {
+  background-color: $brand2;
+  height: 65%;
+};
+
+footer {
+  background-color: $footer;
+  height: 8vw;
+  width: 100%;
+  position: fixed;
+  bottom: 0%;
+};
+///editing///
+label{
+  position: relative;
+  left: 2%;
+  top: 2%;
+  padding: 2%;
+  font-family: helvetica;
+};
+
+.btn-std{
+  padding: 1% 4%;
+  border-radius: 15%;
+  background-color: $brand1;
+  color: white;
+  font-size: 95%;
+  border: none;
+  float: right;
+  margin-right: 5%;
+  margin-top: -10%;
+};
+
+.btn-edit{
+  padding: 1% 4%;
+  border-radius: 15%;
+  font-size: 95%;
+  border: none;
+  width: 5%;
+  display: inline-block;
+  position: relative;
+  float: right;
+  right: 3%;
+};
+#edit{
+  background-color: $brand1;
+  color: white;
+
+};
+#delete{
+  background-color: #c4c9d1;
+  color: black;
+
+};
+
+//navbar
+img{
+  position: absolute;
+  top: 2%;
+  left: 4%;
+};
+
+h1{
+  color: white;
+  font-size: 165%;
+  display: inline-block;;
+  order: 1;
+  position: absolute;
+  margin-top: 3%;
+  // bottom: 3%;
+  left: 9%;
+};
+
+ #sign{
+   background-color: $brand2;
+   color: black;
+   font-size: 95%;
+   border-radius: 2px;
+   outline: none;
+   position: absolute;
+   float: right;
+   right: 2%;
+   margin-top: 3%;
+ };
+
+ //edit gallery
+ .input-std{
+   outline: black solid 1px;
+   padding: 2% 8%;
+    margin: 2%;
+    margin-right: 10%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ };
+ .clearfix{
+   margin: 5%;
+   padding: 2%;
+   clear: both;
+ };
+
+ h2{
+   font-family: helvetica;
+   font-size: 85%;
+   margin-left: 2%;
+ };
+ .edit-gallery{
+   background-color: $footer;
+   padding: 2% 2%;
+   margin: 2%;
+   width: 80%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   border-radius: 3%;
+   };
+span{
+  background-color: $footer;
+  padding: 2% 2%;
+  margin: 2%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 3%;
+};
+.tooltip.top .tooltip-inner .tooltip{
+    background-color:red;
+}
+social icons
+.evernote {
+	background: url('/social-media-icons-15.png') no-repeat 75.12% 6%;
+	background-size: 350px 136px;
+	width: 37px;
+	height: 36px;
+};

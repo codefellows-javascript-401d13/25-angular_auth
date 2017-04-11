@@ -1,0 +1,26 @@
+<section class="edit">
+  <form class="edit-gallery"
+    name="editGallery"
+    ng-submit="editGalleryCtrl.updateGallery()"
+    novalidate>
+
+    <fieldset>
+      <span class="item-label">name:</span>
+      <input name="name" class="input-std" type="text"
+        uib-tooltip="Please input a name for the gallery"
+        ng-model="editGalleryCtrl.gallery.name">
+    </fieldset>
+
+    <fieldset>
+      <span class="item-label">description:</span>
+      <input name="desc" class="input-std" type="text"
+      uib-tooltip="Please input a gallery description"
+      tooltip-class="tooltip"
+        ng-model="editGalleryCtrl.gallery.desc">
+    </fieldset>
+
+
+  </form>
+    <div class="clearfix"></div>
+    <button class="btn-std">update</button>
+</section>
