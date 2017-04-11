@@ -1,0 +1,27 @@
+.social-media-icons {
+  ul {
+    li {
+      width: 128px;
+      height: 128px;
+      float: left;
+
+      &:first-child{
+        background: url('../../assets/spriteSheet.png') no-repeat -166px -167px;
+        width: 156px;
+        height: 129px;
+    }
+    &:nth-child(2){
+      background: url('../../assets/spriteSheet.png') no-repeat -310px -412px;
+      width: 156px;
+      height: 129px;
+  }
+  &:last-child{
+    background: url('../../assets/spriteSheet.png') no-repeat -567px -61px;
+    width: 156px;
+    height: 129px;
+}
+
+
+  }
+}
+}
