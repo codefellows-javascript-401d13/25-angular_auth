@@ -1,0 +1,19 @@
+<section class="create-gallery form">
+  <form name="createGalleryForm"
+    class="gallery-form"
+    ng-submit="createGalleryCtrl.createGallery()">
+
+    <fieldset>
+      <input name="name" class="input-std" type="text"
+        ng-model="createGalleryCtrl.gallery.name" placeholder="name dat swaggery"required>
+    </fieldset>
+
+    <fieldset>
+      <input name="desc" class="input-std" type="text"
+        ng-model="createGalleryCtrl.gallery.desc" placeholder="descrip dat swaggery"required>
+    </fieldset>
+
+    <button class="btn-std" type="submit">create swaggery</button>
+  </form>
+</section>
+<div class="clearfix"></div>
