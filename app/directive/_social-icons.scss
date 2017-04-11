@@ -1,0 +1,36 @@
+.social-media{
+  display:flex;
+}
+
+.social social-icon{
+  background-image: url('../../assets/socialicons.png');
+  background-repeat: no-repeat;
+  display: block;
+  float: right;
+  margin-bottom: 3vw;
+}
+.social-icon-twitter{
+  height: 76px;
+  width: 100px;
+  background-position: -49px -52px;
+  zoom:1;
+}
+
+.social-icon-fb {
+  height: 109px;
+  width:109px;
+  background-position: -53px -232px;
+  zoom:1;
+}
+
+.social-icon-instagram {
+  height: 84px;
+  width:92px;
+  background-position: -201px -41px;
+  zoom:1;
+}
+
+/* nav ul{
+  display: inline-block;
+}
+ */
