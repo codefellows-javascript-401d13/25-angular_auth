@@ -26,4 +26,9 @@
     background-color: lightgrey ;
     color: $brand-primary;
   }
+
+  .dropdown {
+    position: absolute;
+    right: 0;
+  }
 }
