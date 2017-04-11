@@ -1,0 +1,22 @@
+<section class="navbar">
+
+  <div uib-dropdown>
+    <button type="button" class="btn btn-primary" uib-dropdown-toggle>
+      Dropdown<span class="caret"></span>
+    </button>
+
+    <ul class="dropdown-menu" uib-dropdown-menu>
+      <li><a href="#">Link1</a></li>
+      <li><a href="#">Link2</a></li>
+      <li><a href="#">Link3</a></li>
+    </ul>
+  </div>
+
+  <nav>
+    <img ng-src="../../wireframes/assets/cf-logo.png">
+    <h1>brianGram</h1>
+    <div ng-hide="navbarCtrl.hideButtons">
+      <button class="btn-nav" ng-click="navbarCtrl.logout()">logout</button>
+    </div>
+  </nav>
+</section>

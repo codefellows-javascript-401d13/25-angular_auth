@@ -1,0 +1,35 @@
+.edit{
+  overflow: auto;
+  .edit-gallery{
+    background: #444;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 30px;
+    fieldset{
+      span{
+        display:block;
+        margin-top: 10px;
+        margin-left: 2%;
+        margin-right: 2%;
+        float:left;
+
+      }
+      input{
+        margin-top: 10px;
+        width: 88%;
+      }
+
+    }
+    fieldset:last-of-type{
+      input{
+        width:83%;
+      }
+    }
+    button{
+      margin-left: 2%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+}
