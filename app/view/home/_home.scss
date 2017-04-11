@@ -1,0 +1,30 @@
+$brand-primary: #444;
+$brand-secondary: #888;
+$black: #000;
+$white: #fff;
+$grey: #ccc;
+$gutter: 30px;
+$gutterP: 10%;
+
+.home{
+  ul{
+    clear: both;
+    li{
+      // can move everything from li down into gallery-item .scss
+      padding-top: 10px;
+      padding-bottom: 10px;
+      width: 90%;
+      margin: $gutterP /2;
+      border-radius: 5px;
+      span{
+        margin-left: $gutter;
+        font-weight: bold;
+      }
+      span:last-child {
+        margin-bottom: 0;
+        margin-left: 0;
+        font-weight: normal;
+      }
+    }
+  }
+}
