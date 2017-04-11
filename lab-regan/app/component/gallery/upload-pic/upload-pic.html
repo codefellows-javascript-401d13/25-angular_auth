@@ -1,0 +1,23 @@
+<section class="upload-pic">
+<uib-accordion>
+<div uib-accordion-group class="panel-default" heading="upload a new pic to gallery {{uploadPicCtrl.gallery.name}}" is-open="uploadPicCtrl.accOpen">
+
+
+  <form ng-submit="uploadPicCtrl.uploadPic()" novalidate>
+    <fieldset>
+      <input type="text" ng-model="uploadPicCtrl.pic.name" placeholder="name">
+      <input type="text" ng-model="uploadPicCtrl.pic.desc" placeholder="description">
+    </fieldset>
+    <div>
+      <p class="img-grabber"
+        ngf-select
+        ng-model="uploadPicCtrl.pic.file">
+          select a pic to upload!
+      </p>
+      <button class="btn-std">upload!</button>
+    </div>
+  </form>
+
+</div>
+</uib-accordion>
+</section>
