@@ -1,6 +1,19 @@
 <section class="navbar">
-  <img ng-src="../../../assets/cf-logo.png">
+  <!-- <img ng-src="../../../assets/cf-logo.png"> -->
   <h2>cfgram</h2>
+
+<div uib-dropdown> <!--attribute directive on element -->
+  <button type="button" class="btn btn-primary" uib-dropdown-toggle>
+    Dropdown<span class="caret"></span>
+  </button>
+
+  <ul class="dropdown-menu" uib-dropdown-menu> <!--from angular ui bootstrap-->
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Careers</a></li>
+  </ul>
+</div>
+
 
   <nav>
     <div ng-hide="navbarCtrl.hideButtons">

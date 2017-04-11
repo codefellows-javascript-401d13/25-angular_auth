@@ -10,8 +10,9 @@ const uiRouter = require('angular-ui-router');
 const ngTouch = require('angular-touch');
 const ngAnimate = require('angular-animate');
 const ngFileUpload = require('ng-file-upload');
+const uiBootstrap = require('angular-ui-bootstrap');
 
-const cfgram = angular.module('cfgram', [ngTouch, ngAnimate, uiRouter, ngFileUpload]);
+const cfgram = angular.module('cfgram', [ngTouch, ngAnimate, uiRouter, uiBootstrap, ngFileUpload]);
 
 let context = require.context('./config/', true, /\.js$/);
 context.keys().forEach( key => {
@@ -50,5 +51,5 @@ context = require.context('./directive/', true, /\.js$/);
 context.keys().forEach( key => { //for each key let name.. //
   let name = camelcase(path.basename(key, '.js'));//path is a native node method
   let module = context(key);
-  cfgram.diredctive(name, module); //name is from the file name.
+  cfgram.directive(name, module); //name is from the file name.
 });
