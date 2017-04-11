@@ -1,0 +1,121 @@
+@import '../theme/_vars.scss';
+
+body {
+  margin-top: 45px;
+  width: 435px;
+  height: 810px;
+  font-family: $fontStyle;
+}
+
+header {
+  width: 100%;
+  color: $white;
+  background-color: $highlightBackground;
+  font-size: 18px;
+  ul {
+    padding: 15px;
+  }
+}
+
+main {
+  background-color: $mainBackground;
+  width: 433px;
+  border-left: 1px solid $footerBackground;
+  border-right: 1px solid $footerBackground;
+  article {
+    color: $highlightBackground;
+    font-size: 14px;
+    padding-top: 30px;
+  }
+  form {
+    margin-right: 3%;
+  }
+
+  .btn-std {
+    font-size: 14px;
+    border: 1px solid $highlightBackground;
+    border-radius: 2px;
+    padding-right: 45px;
+    padding-left: 45px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 14px;
+    margin-bottom: 10px;
+    color: $mainBackground;
+    background-color: $highlightBackground;
+    display: inline-block;
+    position: relative;
+    left: 265px;
+  }
+
+  .input-std {
+    border-radius: 2px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: $footerBackground;
+    border: 0.5px solid $footerBackground;
+  }
+}
+
+footer {
+  width: 100%;
+  background-color: $footerBackground;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.iconz {
+  li {
+    display: inline-block;
+    width: 5.8vw;
+    height: 5.4vw;
+    transform: scale(0.3);
+    margin: -1vw -1.8vw;
+  }
+}
+
+.instagram {
+	background: url('../../assets/social-icons.png') no-repeat -312px -7px;
+	width: 80px;
+	height: 81px;
+}
+
+.youtube {
+	background: url('../../assets/social-icons.png') no-repeat -216px -8px;
+	width: 64px;
+	height: 80px;
+}
+
+.twitter {
+	background: url('../../assets/social-icons.png') no-repeat -112px -16px;
+	width: 80px;
+	height: 64px;
+}
+
+.in {
+	background: url('../../assets/social-icons.png') no-repeat -415px -12px;
+	width: 71px;
+	height: 71px;
+}
+
+.t {
+	background: url('../../assets/social-icons.png') no-repeat -527px -13px;
+	width: 45px;
+	height: 70px;
+}
+
+.google-plus {
+	background: url('../../assets/social-icons.png') no-repeat -620px -15px;
+	width: 67px;
+	height: 68px;
+}
+
+.fb {
+	background: url('../../assets/social-icons.png') no-repeat -37px -13px;
+	width: 34px;
+	height: 69px;
+}
