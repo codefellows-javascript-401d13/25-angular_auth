@@ -41,7 +41,11 @@ module.exports = {
       {
         test: /\.scss$/,
         loader: ExtractTextPlugin.extract(['css-loader', 'sass-loader'])
-      }
+      },
+      {
+        test: /\.(woff|tt|svg|eot).*/,
+        loader: 'url?limit=10000&name=image/[hash].[ext]'
+      },
     ]
   }
 };

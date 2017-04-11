@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = {
+module.exports = function(){
   return {
     restrict: 'EAC',
     template: require('./social-icons.html'),
@@ -10,8 +10,8 @@ module.exports = {
     scope: {
       tester: '@'
     }
-  }
-}
+  };
+};
 
 function SocialIconsController(){
   this.icons = ['fb', 'twitter', 'instagram'];

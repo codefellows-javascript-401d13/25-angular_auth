@@ -9,9 +9,10 @@ const uiRouter = require('angular-ui-router');
 const ngTouch = require('angular-touch');
 const ngAnimate = require('angular-animate');
 const ngFileUpload = require('ng-file-upload');
+const uiBootstrap = require('angular-ui-bootstrap');
 const path = require('path');
 
-const brianGram = angular.module('brianGram',[ngTouch, ngAnimate, uiRouter, ngFileUpload]);
+const brianGram = angular.module('brianGram',[ngTouch, ngAnimate, uiRouter, uiBootstrap, ngFileUpload]);
 
 let context = require.context('./config/', true, /\.js$/);
 context.keys().forEach(key => {
