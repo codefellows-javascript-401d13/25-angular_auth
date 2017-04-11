@@ -1,0 +1,43 @@
+<section class="landing">
+  <div class="join-container"
+    ng-if="landingCtrl.showSignup">
+    <h2>Sign Up.</h2>
+    <div class="join-inner">
+      <signup></signup>
+      <p>already a member?</p>
+      <a href="/#/join#login"
+         ng-click="landingCtrl.showSignup=false">
+        sign in here.
+      </a>
+    </div>
+  </div>
+
+  <div class="join-container"
+       ng-if="!landingCtrl.showSignup">
+    <h2>Sign In.</h2>
+    <div class="join-inner">
+      <login></login>
+      <p>want to sign up?</p>
+      <a href="/#/join#signup"
+         ng-click="landingCtrl.showSignup=true">
+        sign up here.
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="test-section">
+  <section class="accordion-test">
+    <uib-accordion>
+      <p uib-accordion-group class="panel-default" heading="Stuff">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae sint quas fuga ad, officia voluptate error maiores laborum maxime repellat expedita, corporis suscipit ipsum dolor. Quas, temporibus enim dolores facilis.
+      </p>
+      <p uib-accordion-group class="panel-default" heading="Things">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae sint quas fuga ad, officia voluptate error maiores laborum maxime repellat expedita, corporis suscipit ipsum dolor. Quas, temporibus enim dolores facilis.
+      </p>
+      <p uib-accordion-group class="panel-default" heading="Final Heading">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae sint quas fuga ad, officia voluptate error maiores laborum maxime repellat expedita, corporis suscipit ipsum dolor. Quas, temporibus enim dolores facilis.
+      </p>
+    </uib-accordion>
+  </section>
+</section>

@@ -1,5 +1,6 @@
 ![cf](https://i.imgur.com/7v5ASc8.png) Lab 25 - Client Side Auth
 ======
+//change for staging
 
 ## To Submit this Assignment
   * create a fork of this repository
