@@ -1,0 +1,20 @@
+<section class="navbar">
+  <img ng-src="../../../wireframes/assets/cf-logo.png">
+  <h1>CF-GRAM</h1>
+
+    <div ng-hide="navbarCtrl.hideButtons">
+      <button class="logout-btn-std" ng-click="navbarCtrl.logout()">logout</button>
+    </div>
+    <div class="dropdown-main" uib-dropdown>
+      <button type="button" class="btn btn-primary" uib-dropdown-toggle>
+        Menu<span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" uib-dropdown-menu>
+        <li><a href="#">Galleries</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </div>
+
+
+</section>
