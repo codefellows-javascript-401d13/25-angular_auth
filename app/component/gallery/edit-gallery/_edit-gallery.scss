@@ -1,1 +1,8 @@
-@import "../../../scss/main";
+@import "../../../scss/lib/theme/vars";
+
+.edit {
+  .item-lable {
+    margin-bottom: 1vw;
+    display: block;
+  }
+}

@@ -1,23 +1,18 @@
 @import '../../scss/theme/vars';
-.landing {
+.join-inner {
 
-  color: $darkgrey;
-  p {
-    padding-top: $gutter-sm / 2;
-    margin-left: 71%;
-    margin-right: $gutter-sm;
-    clear: both;
-    display: inline;
-    float: left;
+  div:last-child {
+    margin-top: 1.75vw;
+    text-align: right;
+    font-size: 2vw;
+
+    p {
+      display: inline;
+      margin-right: 1vw;
+    }
+
+    a {
+      margin-right: 1.5vw;
+    }
   }
-
-  a {
-    display: inline;
-    float: left;
-    padding-top: $gutter-sm / 2;
-    margin-right: $gutter;
-    text-decoration: none;
-    color: $black;
-  }
-
 }

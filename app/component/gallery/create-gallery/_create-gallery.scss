@@ -1,1 +1,12 @@
-@import "../../../scss/main";
+@import "../../../scss/lib/theme/vars";
+
+.create-gallery {
+  input[type="text"] {
+    margin-bottom: $gutter-sm;
+  }
+
+  button {
+    float: right;
+    padding: 2% 6%;
+  }
+}

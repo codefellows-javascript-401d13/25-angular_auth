@@ -1,15 +1,13 @@
 @import "../../../scss/theme/vars";
 
-// .clearfix {
-//   clear: both;
-// }
+.signup {
+  .input-std {
+    margin-bottom: $gutter-sm;
+  }
 
-::-webkit-input-placeholder {
-  text-indent: $gutter-sm;
-  font-size: 1.1vw;
-}
-
-.btn-std {
-  float: right;
-  margin-right: $gutter;
+  button {
+    float: right;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+  }
 }

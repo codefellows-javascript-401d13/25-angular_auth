@@ -1,0 +1,21 @@
+// Global variables //
+
+// Pallette  //
+$app-primary: #444;
+$app-color: $app-primary / 2;
+$app-secondary: $app-primary * 2;
+$btn-primary: $app-primary / 2;
+$white: #fff;
+$black: #000;
+$disabled: #e3e3e3;
+
+// spacing //
+$gutter-std: 5%;
+$gutter-sm: $gutter-std / 2;
+
+// font //
+$font-std: helvetica;
+$font-secondary: monospace;
+
+// other //
+$btn-radius: 5px;
