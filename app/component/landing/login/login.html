@@ -5,11 +5,12 @@
     <div
       ng-class="{
         'error': loginForm.username.$invalid,
-        'success': loginForm.username.$valid
+        'success': loginForm.username.$valid,
       }">
       <input type="text"
         name="username"
         placeholder="username"
+        class="input-std"
         ng-minlength="4"
         ng-model="loginCtrl.user.username" required>
     </div>
@@ -17,11 +18,12 @@
     <div
       ng-class="{
         'error': loginForm.password.$invalid && loginForm.$submitted,
-        'success': loginForm.password.$valid
+        'success': loginForm.password.$valid,
       }">
       <input type="password" name="password"
         ng-disabled="loginForm.username.$invalid"
         placeholder="password"
+        class="input-std"
         ng-minlength="3"
         ng-model="loginCtrl.user.password" required>
     </div>
@@ -29,4 +31,3 @@
     <button class="btn-std">sign in</button>
   </form>
 </section>
-
