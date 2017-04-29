@@ -14,13 +14,9 @@ module.exports = {
     path: `${__dirname}/build`
   },
   plugins: [
-    new HTMLPlugin({
-      template: `${__dirname}/app/index.html`
-    }),
+    new HTMLPlugin({ template: `${__dirname}/app/index.html` }),
     new ExtractTextPlugin('bundle.css'),
-    new webpack.DefinePlugin({
-      __API_URL__: JSON.stringify(process.env.API_URL)
-    })
+    new webpack.DefinePlugin({ __API_URL__: JSON.stringify(process.env.API_URL)})
   ],
   module: {
     rules: [
@@ -32,6 +28,11 @@ module.exports = {
       {
         test: /\.html$/,
         loader: 'html-loader'
+      },
+      {
+        test: /\.png$/,
+        loader: 'file-loader',
+        options: { name: '[path][name].[hash][ext]' }
       },
       {
         test: /\.scss$/,
