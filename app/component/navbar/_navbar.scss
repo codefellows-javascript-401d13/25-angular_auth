@@ -1,0 +1,26 @@
+@import '../../scss/lib/theme/_vars.scss';
+
+.btn-std {
+  display: inline-block;
+  border: 0.5px solid black;
+  border-radius: 6px;
+  font-size: 1vw;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.navbar {
+  width: 100%;
+  ul {
+    display: inline-block;
+  }
+
+  nav, div {
+    display: inline-block;
+    float: right;
+  }
+}
