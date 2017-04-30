@@ -5,10 +5,10 @@ module.exports = function() {
     let fuzzyRegex = generateFuzzyRegex(searchTerm);
 
     return galleries.filter(gallery => {
-      return fuzzRegex.test(gallery.name.toUpperCase());
+      return fuzzyRegex.test(gallery.name.toUpperCase());
     });
   };
-}
+};
 
 function generateFuzzyRegex(input) {
   if (!input) return /.*/;
