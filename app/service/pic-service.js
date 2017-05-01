@@ -3,7 +3,7 @@
 module.exports = ['$q', '$log', '$http', 'Upload', 'authService', picService];
 
 function picService($q, $log, $http, Upload, authService) {
-  $log.debug('picService'); 
+  $log.debug('picService');
 
   let service = {};
 
@@ -39,5 +39,34 @@ function picService($q, $log, $http, Upload, authService) {
     });
   };
 
+  service.deletePic = function(galleryData, clickedPic) {
+    $log.debug('service.deletePic');
+
+    return authService.getToken()
+    .then( token => {
+      let url = `${__API_URL__}/api/gallery/${galleryData._id}/pic/${clickedPic}`;
+      let config = {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      };
+
+      return $http.delete(url, config);
+    })
+    .then( () => {
+      for (let i=0; i < galleryData.pics.length; i++) {
+        if (galleryData.pics[i]._id === clickedPic) {
+          galleryData.pics.splice(i, 1);
+          break;
+        }
+      }
+    })
+    .catch( err => {
+      $log.error(err.message);
+      return $q.reject(err);
+    });
+
+  };
+
   return service;
-};
+}
