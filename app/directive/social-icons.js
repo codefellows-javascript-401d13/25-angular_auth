@@ -1,5 +1,7 @@
 'use strict';
 
+require('./_social-icons.scss');
+
 module.exports = function() {
   return {
     restrict: 'EAC',
@@ -8,11 +10,11 @@ module.exports = function() {
     bindToController: true,
     controllerAs: 'socialIconsCtrl',
     scope: {
-      individualIcons: '@'
+      iconNames: '@',
     }
   }
 }
 
 function SocialIconsController() {
-  this.icons = ['linkedIn', 'github', 'twitter', 'instagram'];
+  this.icons = ['linkedIn', 'twitter', 'facebook'];
 }
