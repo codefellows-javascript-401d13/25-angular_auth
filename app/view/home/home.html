@@ -1,13 +1,14 @@
 <section class="home">
-  <div class="container">
-    <create-gallery></create-gallery>
+  <create-gallery></create-gallery>
 
-    <ul>
-      <li ng-repeat="gallery in homeCtrl.galleries">
-        <span>name: {{ gallery.name }}</span>
-        <span>description: {{ gallery.desc }}</span>
-        <span>id: {{ gallery._id }}</span>
-      </li>
-    </ul>
-  </div>
+  <ul>
+    <gallery-item
+      ng-repeat="item in homeCtrl.galleries"
+      gallery="item"
+      delete-done="homeCtrl.galleryDeleteDone(galleryData)"
+      ng-click="homeCtrl.currentGallery = item"
+      ></gallery-item>
+  </ul>
+
+  <thumbnail-container ng-if="homeCtrl.currentGallery" gallery="homeCtrl.currentGallery"></thumbnail-container>
 </section>
