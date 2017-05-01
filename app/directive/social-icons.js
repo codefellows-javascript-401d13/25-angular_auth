@@ -8,11 +8,11 @@ module.exports = function() {
     bindToController: true,
     controllerAs: 'socialIconsCtrl',
     scope: {
-      tester: '@'
+      individualIcons: '@'
     }
   }
 }
 
 function SocialIconsController() {
-  this.icons = ['fb', 'twitter', 'instagram'];
+  this.icons = ['linkedIn', 'github', 'twitter', 'instagram'];
 }
